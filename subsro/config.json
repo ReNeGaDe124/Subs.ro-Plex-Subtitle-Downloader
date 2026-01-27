@@ -18,7 +18,7 @@
     "webhook_secret": "",
     "scheduled_download": true,
     "scheduled_cleanup": true,
-    "scan_time": "00:00",
+    "scan_time": "03:00",
     "debug_log": false
   },
   "schema": {
@@ -31,4 +31,5 @@
     "scan_time": "str",
     "debug_log": "bool"
   }
+
 }
