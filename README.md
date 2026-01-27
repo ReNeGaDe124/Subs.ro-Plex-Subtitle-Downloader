@@ -58,8 +58,8 @@ Descarcă automat subtitrări în limba română de pe Subs.ro pentru Plex Media
 | Opțiune | Tip | Implicit | Descriere |
 |--------|------|---------|-------------|
 | <p align="center">`plex_url`</p> | <p align="center">str</p> | `http://localhost:32400` | Linkul către serverul Plex Media Server. |
-| <p align="center">`plex_token`</p> | <p align="center">str</p> | | Token de autentificare Plex Media Server - X-Plex-Token (vezi [aici](https://github.com/ReNeGaDe124/Subs.ro-Plex-Subtitle-Downloader/tree/main?tab=readme-ov-file#-x-plex-token) cum să îl obții). |
-| <p align="center">`subsro_api_key`</p> | <p align="center">str</p> | | Token de autentificare API Subs.ro (vezi [aici](https://github.com/ReNeGaDe124/Subs.ro-Plex-Subtitle-Downloader/tree/main?tab=readme-ov-file#-api-token-subsro) cum să îl obții). |
+| <p align="center">`plex_token`</p> | <p align="center">str</p> | | Token de autentificare Plex Media Server - X-Plex-Token (vezi [aici](https://github.com/ReNeGaDe124/Subs.ro-Plex-Subtitle-Downloader?tab=readme-ov-file#-x-plex-token) cum să îl obții). |
+| <p align="center">`subsro_api_key`</p> | <p align="center">str</p> | | Token de autentificare API Subs.ro (vezi [aici](https://github.com/ReNeGaDe124/Subs.ro-Plex-Subtitle-Downloader?tab=readme-ov-file#-api_token_subsro) cum să îl obții). |
 | <p align="center">`webhook_secret`</p> | <p align="center">password?</p> | | Parola ce va fi folosită pentru interconectarea dintre Add-on și Integrare (dacă nu se dorește folosirea Integrării câmpul poate rămâne gol). |
 | <p align="center">`scheduled_download`</p> | <p align="center">bool</p> | <p align="center">`ON`</p> | Activare/Dezactivare a funcției de descărcare subtitrări pentru toate fișierele video ce nu au o subtitrare asociată. |
 | <p align="center">`scheduled_cleanup`</p> | <p align="center">bool</p> | <p align="center">`ON`</p> | Activare/Dezactivare a funcției de curățare subtitrări orfane ce nu mai au un fișier video asociat. |
