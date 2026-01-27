@@ -1,0 +1,7 @@
+requests
+plexapi
+flask
+rarfile
+py7zr
+charset-normalizer
+waitress

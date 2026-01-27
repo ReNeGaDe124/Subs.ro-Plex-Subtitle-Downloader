@@ -1,0 +1,34 @@
+{
+  "name": "Subs.ro Plex Subtitle Downloader",
+  "slug": "subsro",
+  "version": "1.0.0",
+  "description": "Descarcă automat subtitrări în limba română de pe Subs.ro pentru Plex",
+  "startup": "application",
+  "boot": "auto",
+  "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
+  "host_network": true,
+  "map": [
+    "media:rw",
+    "share:rw"
+    ],
+  "options": {
+    "plex_url": "http://homeassistant.local:32400",
+    "plex_token": "",
+    "subsro_api_key": "",
+    "webhook_secret": "",
+    "scheduled_download": true,
+    "scheduled_cleanup": true,
+    "scan_time": "00:00",
+    "debug_log": false
+  },
+  "schema": {
+    "plex_url": "str",
+    "plex_token": "str",
+    "subsro_api_key": "str",
+    "webhook_secret": "password?",
+    "scheduled_download": "bool",
+    "scheduled_cleanup": "bool",
+    "scan_time": "str",
+    "debug_log": "bool"
+  }
+}
