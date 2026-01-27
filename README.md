@@ -147,6 +147,7 @@ title: Subs.ro Plex Subtitle Downloader
 </p>
 
   5. Pune valoarea copiată în câmpul `plex_token` din Add-on.
+  6. [Înapoi la secțiunea de configurare a Integrării](https://github.com/ReNeGaDe124/Subs.ro-Plex-Subtitle-Downloader?tab=readme-ov-file#-add-on-1)
 
 ### 💬 API Token Subs.ro
 
@@ -165,6 +166,7 @@ title: Subs.ro Plex Subtitle Downloader
 </p>
 
   5. Pune valoarea copiată în câmpul `subsro_api_key` din Add-on.
+  6. [Înapoi la secțiunea de configurare a Integrării](https://github.com/ReNeGaDe124/Subs.ro-Plex-Subtitle-Downloader?tab=readme-ov-file#-add-on-1)
 
 ## 📜 Note de final ❤️
   - Mulțumiri echipei Subs.ro pentru activarea API-ului! Fără acesta proiectul de față nu ar fi fost posibil.  Mulțumiri de asemenea și tuturor traducătorilor! Logoul și subtitrările aparțin Subs.ro.🙏
