@@ -195,7 +195,7 @@ title: Subs.ro Plex Subtitle Downloader
   6. [Înapoi la secțiunea de configurare a Add-on-ului.](https://github.com/ReNeGaDe124/Subs.ro-Plex-Subtitle-Downloader?tab=readme-ov-file#-add-on-1)
 
 ## 📜 Note de final ❤️
-  - Mulțumiri echipei Subs.ro pentru activarea API-ului! Fără acesta proiectul de față nu ar fi fost posibil.  Mulțumiri de asemenea și tuturor traducătorilor! Logoul și subtitrările aparțin Subs.ro.🙏
+  - Mulțumiri echipei Subs.ro pentru activarea API-ului! Fără acesta proiectul de față nu ar fi fost posibil. Mulțumiri, de asemenea, tuturor traducătorilor și sincronizatorilor! Logoul și subtitrările aparțin Subs.ro. 🙏
   - Cod sursă al proiectului realizat în totalitate folosind Google Gemini. 🤖
   - Dacă aveți idei de îmbunătățire sau doriți să semnalați probleme cu acest proiect, le aștept cu plăcere. 🤗
   - Acesta este un proiect făcut din pasiune dar dacă îți place, îl găsești folositor și vrei să susții dezvoltarea lui pe viitor, dar și munca depusă până acum, o poți face printr-o contribuție scanând codul QR generat de Revolut de mai jos. Vă mulțumesc! 🫶
