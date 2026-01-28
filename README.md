@@ -88,10 +88,10 @@ Descarcă automat subtitrări în limba română de pe Subs.ro pentru Plex Media
   <img  width="500" src="https://github.com/user-attachments/assets/094617a5-e39e-44e8-92e6-a5529d8d8c81" />
 </p>
 
-  4. Adaugă `http://localhost:8999/plex` (dacă serverul de Plex nu este pe aceeași mașină cu Home Assistant, în loc de localhost pune IP-ul serverului Home Assistant) și apasă pe butonul `Save Changes`.
+  4. Adaugă `http://homeassistant.local:8999/plex` (dacă serverul de Plex nu este pe aceeași mașină cu Home Assistant, în loc de `homeassistant.local` pune IP-ul serverului Home Assistant) și apasă pe butonul `Save Changes`.
 
 <p align="center">
-  <img  width="600" src="https://github.com/user-attachments/assets/041fcd72-cd4a-4f1e-bf3c-e879b60c1bea" />
+  <img  width="600" src="https://github.com/user-attachments/assets/27a50e31-e374-4203-ad5e-4466e74dac1b" />
 </p>
 
 ### 🔗 Integrare
