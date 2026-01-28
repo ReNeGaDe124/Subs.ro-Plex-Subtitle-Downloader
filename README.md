@@ -79,6 +79,33 @@ Mențiune: Add-on-ul funcționează pe portul **8999**. Acesta trebuie să nu fi
 | <p align="center">`url`</p> | <p align="center">str</p> | `http://localhost:8999` | Linkul către Add-on-ul Subs.ro Plex Subtitle Downloader. (în mod normal nu trebuie schimbat) |
 | <p align="center">`secret`</p> | <p align="center">str</p> | | Parola folosită în câmpul `webhook_secret` din Add-on. |
 
+### 🪝 Webhook Plex Media Server
+
+  1. Conectează-te pe serverul tău Plex Media Server și accesează secțiunea `Settings`.
+  
+<p align="center">
+  <img width="300" src="https://github.com/user-attachments/assets/ec53be41-766c-4707-bb87-05c8490afeb8" />
+</p>
+
+
+  2. Accesează secțiunea `Webhooks`.
+
+<p align="center">
+  <img  width="200" src="https://github.com/user-attachments/assets/fd17d638-2b95-4f3d-817f-793dfc0d6d84" />
+</p>
+
+  3. Apasă pe butonul `Add webhook`.
+
+<p align="center">
+  <img  width="500" src="https://github.com/user-attachments/assets/094617a5-e39e-44e8-92e6-a5529d8d8c81" />
+</p>
+
+  4. Adaugă `http://localhost:8999/plex` (dacă serverul de Plex nu este pe aceeași mașină cu Home Assistant, în loc de localhost pune IP-ul serverului Home Assistant) și apasă pe butonul `Save Changes`.
+
+<p align="center">
+  <img  width="600" src="https://github.com/user-attachments/assets/041fcd72-cd4a-4f1e-bf3c-e879b60c1bea" />
+</p>
+
 ## ▶️ Utilizare Integrare
 
 <p align="center">
