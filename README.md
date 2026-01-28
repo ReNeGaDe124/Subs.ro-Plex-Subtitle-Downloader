@@ -66,18 +66,7 @@ Descarcă automat subtitrări în limba română de pe Subs.ro pentru Plex Media
 | <p align="center">`scan_time`</p> | <p align="center">str</p> | <p align="center">`03:00`</p> | Ora la care vor rula funcțiile `scheduled_download` și/sau `scheduled_cleanup`. |
 | <p align="center">`debug_log`</p> | <p align="center">str</p> | <p align="center">`OFF`</p> | Activare/Dezactivare funcție logare detaliată. |
 
-Mențiune: Add-on-ul funcționează pe portul **8999**. Acesta trebuie să nu fie folosit de alt add-on sau aplicație.
-
-### 🔗 Integrare
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/cba9f6d7-d273-46c2-a28a-a9178b6ed4c2" width="300" />
-</p>
-
-| Opțiune | Tip | Implicit | Descriere |
-|--------|------|---------|-------------|
-| <p align="center">`url`</p> | <p align="center">str</p> | `http://localhost:8999` | Linkul către Add-on-ul Subs.ro Plex Subtitle Downloader. (în mod normal nu trebuie schimbat) |
-| <p align="center">`secret`</p> | <p align="center">str</p> | | Parola folosită în câmpul `webhook_secret` din Add-on. |
+**IMPORTANT**: Add-on-ul funcționează pe portul **8999**. Acesta trebuie să nu fie folosit de alt add-on sau aplicație.
 
 ### 🪝 Webhook Plex Media Server
 
@@ -86,7 +75,6 @@ Mențiune: Add-on-ul funcționează pe portul **8999**. Acesta trebuie să nu fi
 <p align="center">
   <img width="300" src="https://github.com/user-attachments/assets/ec53be41-766c-4707-bb87-05c8490afeb8" />
 </p>
-
 
   2. Accesează secțiunea `Webhooks`.
 
@@ -105,6 +93,17 @@ Mențiune: Add-on-ul funcționează pe portul **8999**. Acesta trebuie să nu fi
 <p align="center">
   <img  width="600" src="https://github.com/user-attachments/assets/041fcd72-cd4a-4f1e-bf3c-e879b60c1bea" />
 </p>
+
+### 🔗 Integrare
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cba9f6d7-d273-46c2-a28a-a9178b6ed4c2" width="300" />
+</p>
+
+| Opțiune | Tip | Implicit | Descriere |
+|--------|------|---------|-------------|
+| <p align="center">`url`</p> | <p align="center">str</p> | `http://localhost:8999` | Linkul către Add-on-ul Subs.ro Plex Subtitle Downloader. (în mod normal nu trebuie schimbat) |
+| <p align="center">`secret`</p> | <p align="center">str</p> | | Parola folosită în câmpul `webhook_secret` din Add-on. |
 
 ## ▶️ Utilizare Integrare
 
