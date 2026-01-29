@@ -1,0 +1,43 @@
+name: Build Add-on
+
+on:
+  release:
+    types: [published]
+  push:
+    branches: ["main"]
+    paths:
+      - "subsro/**"
+      - ".github/workflows/build.yaml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build ${{ matrix.arch }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    strategy:
+      fail-fast: false
+      matrix:
+        arch: ["aarch64", "amd64"]
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and Push Add-on
+        uses: home-assistant/builder@master
+        with:
+          args: |
+            --${{ matrix.arch }} \
+            --target subsro \
+            --image "${{ github.repository_owner }}/Subs.ro-Plex-Subtitle-Downloader/{arch}-subsro" \
+            --docker-hub "ghcr.io"
