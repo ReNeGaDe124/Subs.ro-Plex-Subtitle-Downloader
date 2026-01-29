@@ -3,7 +3,7 @@
   "slug": "subsro",
   "version": "1.0.1",
   "arch": ["aarch64", "amd64"],
-  "image": "ghcr.io/renegade124/Subs.ro-Plex-Subtitle-Downloader/{arch}-subsro",
+  "image": "ghcr.io/renegade124/subs.ro-plex-subtitle-downloader/{arch}-subsro",
   "description": "Descarcă automat subtitrări în limba română de pe Subs.ro pentru Plex",
   "startup": "application",
   "boot": "auto",
@@ -34,4 +34,5 @@
   }
 
 }
+
 
