@@ -39,5 +39,5 @@ jobs:
           args: |
             --${{ matrix.arch }} \
             --target subsro \
-            --image "${{ github.repository_owner }}/Subs.ro-Plex-Subtitle-Downloader/{arch}-subsro" \
+            --image "${{ github.repository_owner }}/subs.ro-plex-subtitle-downloader/{arch}-subsro" \
             --docker-hub "ghcr.io"
