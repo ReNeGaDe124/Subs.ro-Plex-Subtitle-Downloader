@@ -94,7 +94,7 @@ def extract_srt(archive_bytes, target_path, target_season=None, target_episode=N
                         found_s = int(s_match.group(1) or s_match.group(3))
                         found_e = int(s_match.group(2) or s_match.group(4))
                     else:
-                        e_only_match = re.search(r'(?i)[^a-z]E(\d+)[^a-z]', srt_name)
+                        e_only_match = re.search(r'(?i)(?:[^a-z]E|EP(?:ISODUL)?\.?\s*)(\d+)', srt_name)
                         if e_only_match:
                             found_s = target_season 
                             found_e = int(e_only_match.group(1))
@@ -146,4 +146,5 @@ def extract_srt(archive_bytes, target_path, target_season=None, target_episode=N
             return False
 
         except Exception:
+
             return False
