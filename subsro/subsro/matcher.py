@@ -24,6 +24,16 @@ def get_season_range(text):
     
     return None, None
 
+def get_episode_range(text):
+    if not text: 
+        return None, None
+
+    match = re.search(r'(?i)(?:episoadele|ep\.|ep|e)\s*(\d{1,3})\s*-\s*(?:e|ep\.|ep)?\s*(\d{1,3})', text)
+    if match:
+        return int(match.group(1)), int(match.group(2))
+        
+    return None, None
+
 def get_episode_number(text):
     if not text: 
         return None, None
@@ -61,6 +71,7 @@ def calculate_score(sub, video_tags, video_season, video_episode, log_func=None)
     
     s_range_start, s_range_end = get_season_range(full_text)
     s_exact, e_exact = get_episode_number(full_text)
+    e_range_start, e_range_end = get_episode_range(full_text)
     
     if s_range_start and s_range_end:
         if video_season and (video_season >= s_range_start and video_season <= s_range_end):
@@ -68,6 +79,18 @@ def calculate_score(sub, video_tags, video_season, video_episode, log_func=None)
             reasons.append(f"POTRIVIRE SEZON S{s_range_start}-{s_range_end}")
         else:
             if log_func: log_func(f"[DEBUG MATCHER]   [SKIP] Sezon greșit pentru '{title}'. Video: S{video_season}, Sub: S{s_range_start}-{s_range_end}")
+            return -100
+
+    elif s_exact and e_range_start and e_range_end:
+        if video_season == s_exact:
+            if e_range_start <= video_episode <= e_range_end:
+                score += 100
+                reasons.append(f"POTRIVIRE INTERVAL EPISOADE E{e_range_start}-{e_range_end}")
+            else:
+                if log_func: log_func(f"[DEBUG MATCHER]   [SKIP] Episod în afara intervalului pentru '{title}'. Video: E{video_episode}, Pachet: E{e_range_start}-{e_range_end}")
+                return -100
+        else:
+            if log_func: log_func(f"[DEBUG MATCHER]   [SKIP] Sezon greșit pentru '{title}'. Video: S{video_season}, Sub: S{s_exact}")
             return -100
 
     elif s_exact and e_exact:
@@ -143,4 +166,5 @@ def sort_best_match(results, video_filepath, video_season, video_episode, log_fu
 
     except Exception as e:
         if log_func: log_func(f"[DEBUG MATCHER ERROR]: {e}")
+
         return results
